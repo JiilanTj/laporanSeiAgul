@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#02913f</color>
+    <color name="textViewBackground">#959AF7B9</color>
+    <color name="loginButtonBG">#E47119</color>
+    <color name="colorPrimaryDark">#0D5922</color>
+    <color name="colorAccent">#D81B60</color>
+</resources>

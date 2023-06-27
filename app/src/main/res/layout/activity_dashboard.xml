@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity">
+
+    <ImageView
+        android:id="@+id/userProf"
+        android:layout_width="97dp"
+        android:layout_height="95dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/greetings"
+        app:layout_constraintHorizontal_bias="0.801"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.106"
+        app:srcCompat="@drawable/user" />
+
+    <TextView
+        android:id="@+id/greetings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:fontFamily="@font/poppinssemibolditalic"
+        android:text="Halo, selamat datang"
+        app:layout_constraintBottom_toBottomOf="@+id/userProf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/userProf"
+        app:layout_constraintVertical_bias="0.535" />
+
+    <TextView
+        android:id="@+id/etMainUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        app:layout_constraintBottom_toBottomOf="@+id/userProf"
+        app:layout_constraintEnd_toEndOf="@+id/greetings"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/greetings"
+        app:layout_constraintTop_toBottomOf="@+id/greetings"
+        app:layout_constraintVertical_bias="0.18" />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="375dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/greetings"
+        app:layout_constraintStart_toStartOf="@+id/userProf"
+        app:layout_constraintTop_toBottomOf="@+id/userProf" />
+
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:rowCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/viewPager"
+        app:layout_constraintStart_toStartOf="@+id/viewPager"
+        app:layout_constraintTop_toBottomOf="@+id/viewPager">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewProf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnProf"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:backgroundTint="#ffffff"
+                    android:src="@drawable/baseline_supervised_user_circle_24" />
+
+                <TextView
+                    android:id="@+id/txtProf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewAdu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnAdu"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:backgroundTint="#ffffff"
+                    android:src="@drawable/baseline_build_circle_24" />
+
+                <TextView
+                    android:id="@+id/txtAdu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pengaduan"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewRiwayat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnRiwayat"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:backgroundTint="#ffffff"
+                    android:src="@drawable/baseline_history_24" />
+
+                <TextView
+                    android:id="@+id/txtRiwayat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Riwayat Pengaduan"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewTentang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnTentang"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:backgroundTint="#ffffff"
+                    android:src="@drawable/baseline_whatshot_24" />
+
+                <TextView
+                    android:id="@+id/txtTentang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tentang"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

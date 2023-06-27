@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id"
+        android:fontFamily="@font/poppinssemibold" />
+
+    <TextView
+        android:fontFamily="@font/poppinssemibold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pelapor"
+        android:id="@+id/pelaporList" />
+    <TextView
+        android:fontFamily="@font/poppinssemibold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sampah"
+        android:id="@+id/kategoriList" />
+    <TextView
+        android:fontFamily="@font/poppinssemibold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kordinat"
+        android:id="@+id/kordinatList" />
+    <TextView
+        android:fontFamily="@font/poppinssemibold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Banyak sampah di got sini dan sana, terjadi karena banyak ini dan itu "
+        android:id="@+id/rincianList" />
+    <ImageView
+        android:id="@+id/gambarList"
+        android:layout_width="80dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" />
+
+
+</LinearLayout>

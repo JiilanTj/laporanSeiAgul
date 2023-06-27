@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RiwayatActivity">
+
+
+    <TextView
+        android:id="@+id/Home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Riwayat"
+        android:textColor="#000"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.060000002" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Home"
+        app:layout_constraintVertical_bias="0.07999998">
+
+        <!-- Dropdown 1 (Biru) -->
+        <Button
+            android:id="@+id/btnProses"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Laporan di Proses"
+            android:fontFamily="@font/poppinssemibolditalic"
+            android:background="@android:color/holo_blue_light" />
+
+        <!-- Dropdown 2 (Merah) -->
+        <Button
+            android:id="@+id/btnDitolak"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Laporan di Tolak"
+            android:fontFamily="@font/poppinssemibolditalic"
+            android:background="@android:color/holo_red_light" />
+
+        <!-- Dropdown 3 (Kuning) -->
+        <Button
+            android:id="@+id/btnSelesai"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Laporan Selesai"
+            android:fontFamily="@font/poppinssemibolditalic"
+            android:background="@android:color/holo_orange_light" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

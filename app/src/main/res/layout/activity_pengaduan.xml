@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textKotak"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PengaduanActivity">
+
+
+    <TextView
+        android:id="@+id/headerTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Layanan Pengaduan"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22000003" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="130dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/headerTxt"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029999971"
+        app:srcCompat="@drawable/ic_logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsregular"
+        android:text="Sikahkan isi loginData untuk melakukan pengaduan"
+        android:textAlignment="center"
+        android:textColor="#2d3259"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/headerTxt"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="@+id/headerTxt"
+        app:layout_constraintTop_toBottomOf="@+id/headerTxt"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageAtas"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/kotakatas" />
+
+    <ImageView
+        android:id="@+id/imageBawah"
+        android:layout_width="360dp"
+        android:layout_height="438dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageAtas"
+        app:layout_constraintStart_toStartOf="@+id/imageAtas"
+        app:layout_constraintTop_toBottomOf="@+id/imageAtas"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/kotakbawah" />
+
+    <TextView
+        android:id="@+id/textNgotak"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:text="Mohon isi foto pengaudan anda dengan benar (Foto max 2mb)"
+        app:layout_constraintBottom_toBottomOf="@+id/imageAtas"
+        app:layout_constraintEnd_toEndOf="@+id/imageAtas"
+        app:layout_constraintStart_toStartOf="@+id/imageAtas"
+        android:textColor="#fff"
+        android:fontFamily="@font/poppinssemibolditalic"
+        app:layout_constraintTop_toTopOf="@+id/imageAtas" />
+
+    <ImageButton
+        android:id="@+id/btnWeb"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:background="@drawable/imgtrap"
+        app:layout_constraintBottom_toBottomOf="@+id/imageBawah"
+        app:layout_constraintEnd_toEndOf="@+id/imageBawah"
+        app:layout_constraintStart_toStartOf="@+id/imageBawah"
+        app:layout_constraintTop_toBottomOf="@+id/imageAtas"
+        app:layout_constraintVertical_bias="0.050000012" />
+
+    <EditText
+        android:id="@+id/urlGambar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="URL Gambar"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/imageBawah"
+        app:layout_constraintEnd_toEndOf="@+id/btnWeb"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnWeb"
+        app:layout_constraintTop_toBottomOf="@+id/btnWeb"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonGPS"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:backgroundTint="#2D3259"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Upload Lokasi"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="@+id/urlGambar"
+        app:layout_constraintEnd_toEndOf="@+id/btnWeb"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btnWeb"
+        app:layout_constraintTop_toBottomOf="@+id/btnWeb"
+        app:layout_constraintVertical_bias="0.83"
+        app:srcCompat="@drawable/baseline_file_upload_24" />
+
+
+    <TextView
+        android:id="@+id/textViewUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Kategori :"
+        android:textColor="#063970"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageBawah"
+        app:layout_constraintEnd_toEndOf="@+id/urlGambar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/urlGambar"
+        app:layout_constraintTop_toBottomOf="@+id/urlGambar"
+        app:layout_constraintVertical_bias="0.04000002" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageBawah"
+        app:layout_constraintEnd_toEndOf="@+id/textViewUpload"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewUpload"
+        app:layout_constraintTop_toTopOf="@+id/textViewUpload"
+        android:textAlignment="center"
+        app:layout_constraintVertical_bias="0.17000002" />
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2D3259"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Kirim Aduan"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="@+id/imageBawah"
+        app:layout_constraintEnd_toEndOf="@+id/imageBawah"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/imageBawah"
+        app:layout_constraintTop_toBottomOf="@+id/tilKeterangan"
+        app:layout_constraintVertical_bias="0.238" />
+
+    <EditText
+        android:id="@+id/tilKeterangan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Keterangan"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/imageBawah"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <TextView
+        android:id="@+id/kordinat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kordinat Lokasi"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewUpload"
+        app:layout_constraintEnd_toEndOf="@+id/buttonGPS"
+        app:layout_constraintStart_toStartOf="@+id/buttonGPS"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGPS" />
+
+    <TextView
+        android:id="@+id/usernameAduan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:text="Username"
+        app:layout_constraintBottom_toTopOf="@+id/imageAtas"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
